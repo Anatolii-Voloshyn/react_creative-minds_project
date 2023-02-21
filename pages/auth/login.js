@@ -18,15 +18,17 @@ const [user, loading] = useAuthState(auth);
       const result = await signInWithPopup(auth, googleProvider);
       route.push("/");
     } catch (error) {
-      console.log(eroor);
+      console.log(error);
     }
   };
 
   useEffect(() => {
     if (user) {
       route.push("/");
+    } else {
+      console.log("login");
     }
-  }, [route, user]);
+  }, [user]);
 
   return(
     <div className="
