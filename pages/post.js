@@ -82,6 +82,7 @@ export default function Post() {
 
   return(
     <div className="
+      bg-white
       my-20
       p-12
       shadow-lg

@@ -32,6 +32,7 @@ const [user, loading] = useAuthState(auth);
 
   return(
     <div className="
+      bg-white
       shadow-xl
       mt-32
       p-10
