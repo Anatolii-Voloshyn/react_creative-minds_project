@@ -8,7 +8,6 @@ import { BsTrash2Fill } from 'react-icons/bs';
 import { AiFillEdit } from 'react-icons/ai';
 import Link from "next/link";
 
-
 export default function Dashboard() {
   const [user, loading] = useAuthState(auth);
   const [posts, setPosts] = useState([]);

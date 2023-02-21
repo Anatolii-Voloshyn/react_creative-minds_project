@@ -1,5 +1,3 @@
-import { Timestamp } from "firebase/firestore";
-
 export default function Message({children, avatar, username, description}) {
   return(
     <div className="
