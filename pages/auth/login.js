@@ -18,7 +18,7 @@ const [user, loading] = useAuthState(auth);
       const result = await signInWithPopup(auth, googleProvider);
       route.push("/");
     } catch (error) {
-      console.log(error);
+      return;
     }
   };
 
@@ -26,7 +26,7 @@ const [user, loading] = useAuthState(auth);
     if (user) {
       route.push("/");
     } else {
-      console.log("login");
+      return;
     }
   }, [user]);
 
