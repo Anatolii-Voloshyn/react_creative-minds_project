@@ -111,7 +111,7 @@ export default function Details() {
               >
                 <img
                   src={message.avatar}
-                  alt=""
+                  alt="avatar"
                   className="w-10 rounded-full"
                 />
                 <h2>{message.userName}</h2>

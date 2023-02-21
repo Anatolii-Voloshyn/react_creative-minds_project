@@ -25,10 +25,8 @@ const [user, loading] = useAuthState(auth);
   useEffect(() => {
     if (user) {
       route.push("/");
-    } else {
-      console.log("login")
     }
-  }, [user]);
+  }, [route, user]);
 
   return(
     <div className="

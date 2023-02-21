@@ -14,9 +14,10 @@ export default function Message({children, avatar, username, description}) {
         items-center
         gap-2"
       >
-        <img src={avatar} className="
-          w-10
-          rounded-full"
+        <img
+          src={avatar}
+          className="w-10 rounded-full"
+          alt="avatar"
         />
 
         <h2>{username} </h2>
